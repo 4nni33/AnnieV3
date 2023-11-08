@@ -1080,7 +1080,7 @@ export async function handler(chatUpdate) {
             const data = (await conn.onWhatsApp(jid))[0] || {};
 	 
             if (data.exists) {
-              await m.reply(`*[ ⚠️ 𝚁𝙴𝙿𝙾𝚁𝚃𝙴 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙲𝙾𝙽 𝙵𝙰𝙻𝙻𝙾𝚂 ⚠️ ]*\n\n*—◉ 𝙿𝙻𝚄𝙶𝙸𝙽:* ${name}\n*—◉ 𝚄𝚂𝚄𝙰𝚁𝙸𝙾:* ${m.sender}\n*—◉ 𝙲𝙾𝙼𝙰𝙽𝙳𝙾:* ${m.text}\n\n*—◉ 𝙴𝚁𝚁𝙾𝚁:*\n\`\`\`${format(e)}\`\`\`\n\n*[❗] 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙲𝚁𝙴𝙰𝙳𝙾𝚁 𝙳𝙴𝙻 𝙱𝙾𝚃 𝙿𝙰𝚁𝙰 𝙳𝙰𝚁𝙻𝙴 𝚄𝙽𝙰 𝚂𝙾𝙻𝚄𝙲𝙸𝙾𝙽, 𝙿𝚄𝙴𝙳𝙴 𝚄𝚂𝙰𝚁 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 #reporte*`.trim(), data.jid);
+              await m.reply(`* ..  ⚠️  ٫    ̋  ⎯  𝚁𝙴𝙿𝙾𝚁𝚃𝙴 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙲𝙾𝙽 𝙵𝙰𝙻𝙻𝙾𝚂*\n\n*➥ 𓏲 ๋࣭  𝙿𝙻𝚄𝙶𝙸𝙽:* ${name}\n*➥ 𓏲 ๋࣭  𝚄𝚂𝚄𝙰𝚁𝙸𝙾:* ${m.sender}\n*➥ 𓏲 ๋࣭  𝙲𝙾𝙼𝙰𝙽𝙳𝙾:* ${m.text}\n\n*➥ 𓏲 ๋࣭  𝙴𝚁𝚁𝙾𝚁:*\n\`\`\`${format(e)}\`\`\`\n\n*..  ❗  ٫    ̋  ⎯  𝚁𝙴𝙿𝙾𝚁𝚃𝙴 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙲𝙾𝙽 𝙵𝙰𝙻𝙻𝙾𝚂* 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙲𝚁𝙴𝙰𝙳𝙾𝚁 𝙳𝙴𝙻 𝙱𝙾𝚃 𝙿𝙰𝚁𝙰 𝙳𝙰𝚁𝙻𝙴 𝚄𝙽𝙰 𝚂𝙾𝙻𝚄𝙲𝙸𝙾𝙽, 𝙿𝚄𝙴𝙳𝙴 𝚄𝚂𝙰𝚁 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 #reporte*`.trim(), data.jid);
             }
           }*/
           const md5c = fs.readFileSync('./plugins/' + m.plugin);
@@ -1092,7 +1092,7 @@ export async function handler(chatUpdate) {
         }
       }
       if (!opts['restrict']) {
-        if (plugin.tags && plugin.tags.includes('admin')) {
+  if (plugin.tags && plugin.tags.includes('admin')) {
         // global.dfail('restrict', m, this)
           continue;
         }
@@ -1176,13 +1176,14 @@ export async function handler(chatUpdate) {
             if (user.bannedMessageCount < 3) {
               const messageNumber = user.bannedMessageCount + 1;
 const messageText = `
-╔═════════════════════════╗
- ❰ ⚠️ ❱ *¡USUARIO BANEADO!* ❰ ⚠️ ❱
-—◉ *Aviso ${messageNumber}/3 (Total: 3)*
-—◉ ${user.bannedReason ? `\n*Motivo:* ${user.bannedReason}` : '*Motivo:* Sin especificar'}
-—◉ *Si consideras que esto es un error y cuentas con pruebas, puedes comunicarte con el propietario del Bot para apelar la suspensión.*
-—◉ *Contacto para apelaciones:* wa.me/51992004117
-╚═════════════════════════╝
+╭┈─┈─┈─┈─┈─┈─┈─┈─┈─┈╮
+𓏲 ๋࣭  ⚠️ *¡USUARIO BANEADO!* 
+➥ 𓏲 ๋࣭  *Aviso ${messageNumber}/3 (Total: 3)*
+➥ 𓏲 ๋࣭  ${user.bannedReason ? `\n*Motivo:* ${user.bannedReason}` : '*Motivo:* Sin especificar'}
+➥ 𓏲 ๋࣭  *Si consideras que esto es un error y cuentas con pruebas, puedes comunicarte con el propietario del Bot para apelar la suspensión.*
+➥ 𓏲 ๋࣭  *Contacto para apelaciones:* wa.me/51992004117
+╰┈─┈─┈─┈─┈─┈─┈─┈─┈─┈╯
+
                `.trim();
               m.reply(messageText);
               user.bannedMessageCount++;
@@ -1312,7 +1313,7 @@ const messageText = `
               /* for (const [jid] of global.reportes_solicitudes.filter(([number]) => number)) {
                 const data = (await conn.onWhatsApp(jid))[0] || {};
                 if (data.exists) {
-                  await m.reply(`*[ ⚠️ 𝚁𝙴𝙿𝙾𝚁𝚃𝙴 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙲𝙾𝙽 𝙵𝙰𝙻𝙻𝙾𝚂 ⚠️ ]*\n\n*—◉ 𝙿𝙻𝚄𝙶𝙸𝙽:* ${m.plugin}\n*—◉ 𝚄𝚂𝚄𝙰𝚁𝙸𝙾:* ${m.sender}\n*—◉ 𝙲𝙾𝙼𝙰𝙽𝙳𝙾:* ${usedPrefix}${command} ${args.join(' ')}\n\n\`\`\`${text}\`\`\`\n\n*[❗] 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙲𝚁𝙴𝙰𝙳𝙾𝚁 𝙳𝙴𝙻 𝙱𝙾𝚃 𝙿𝙰𝚁𝙰 𝙳𝙰𝚁𝙻𝙴 𝚄𝙽𝙰 𝚂𝙾𝙻𝚄𝙲𝙸𝙾𝙽, 𝙿𝚄𝙴𝙳𝙴 𝚄𝚂𝙰𝚁 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 #reporte*`.trim(), data.jid);
+                  await m.reply(`*..  ⚠️  ٫    ̋  ⎯𝚁𝙴𝙿𝙾𝚁𝚃𝙴 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙲𝙾𝙽 𝙵𝙰𝙻𝙻𝙾𝚂\n\n*➥ 𓏲 ๋࣭  𝙿𝙻𝚄𝙶𝙸𝙽:* ${m.plugin}\n*➥ 𓏲 ๋࣭  𝚄𝚂𝚄𝙰𝚁𝙸𝙾:* ${m.sender}\n*➥ 𓏲 ๋࣭  𝙲𝙾𝙼𝙰𝙽𝙳𝙾:* ${usedPrefix}${command} ${args.join(' ')}\n\n\`\`\`${text}\`\`\`\n\n*[❗] 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙲𝚁𝙴𝙰𝙳𝙾𝚁 𝙳𝙴𝙻 𝙱𝙾𝚃 𝙿𝙰𝚁𝙰 𝙳𝙰𝚁𝙻𝙴 𝚄𝙽𝙰 𝚂𝙾𝙻𝚄𝙲𝙸𝙾𝙽, 𝙿𝚄𝙴𝙳𝙴 𝚄𝚂𝙰𝚁 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 #reporte*`.trim(), data.jid);
                 }
               }*/
               const md5c = fs.readFileSync('./plugins/' + m.plugin);
@@ -1488,8 +1489,8 @@ export async function callUpdate(callUpdate) {
         const callmsg = await this.reply(nk.from, `Hola *@${nk.from.split('@')[0]}*, las ${nk.isVideo ? 'videollamadas' : 'llamadas'} no están permitidas, serás bloqueado.\n-\nSi accidentalmente llamaste póngase en contacto con mi creador para que te desbloquee!`, false, {mentions: [nk.from]});
         // let data = global.owner.filter(([id, isCreator]) => id && isCreator)
         // await this.sendContact(nk.from, data.map(([id, name]) => [id, name]), false, { quoted: callmsg })
-        const vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;𝐇𝐚𝐜𝐡𝐞 𝐉𝐨𝐭𝐚👑;;;\nFN:𝐇𝐚𝐜𝐡𝐞 𝐉𝐨𝐭𝐚 👑\nORG:𝐇𝐚𝐜𝐡𝐞 𝐉𝐨𝐭𝐚 👑\nTITLE:\nitem1.TEL;waid=51992004117+51 992 004 117\nitem1.X-ABLabel:𝐇𝐚𝐜𝐡𝐞 𝐉𝐨𝐭𝐚👑\nX-WA-BIZ-DESCRIPTION:[❗] ᴄᴏɴᴛᴀᴄᴛᴀ ᴀ ᴇsᴛᴇ ɴᴜᴍ ᴘᴀʀᴀ ᴄᴏsᴀs ɪᴍᴘᴏʀᴛᴀɴᴛᴇs.\nX-WA-BIZ-NAME:𝐇𝐚𝐜𝐡𝐞 𝐉𝐨𝐭𝐬 👑\nEND:VCARD`;
-        await this.sendMessage(nk.from, {contacts: {displayName: '𝐇𝐚𝐜𝐡𝐞 𝐉𝐨𝐭𝐚 👑', contacts: [{vcard}]}}, {quoted: callmsg});
+        const vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;𝗔𝗻𝗻𝗶𝗲𝗕𝗼𝘁 ;;;\nFN:𝗔𝗻𝗻𝗶𝗲𝗕𝗼𝘁 \nORG:𝗔𝗻𝗻𝗶𝗲𝗕𝗼𝘁 \nTITLE:\nitem1.TEL;waid=51992004117+51 992 004 117\nitem1.X-ABLabel:𝗔𝗻𝗻𝗶𝗲𝗕𝗼𝘁 \nX-WA-BIZ-DESCRIPTION:[❗] ᴄᴏɴᴛᴀᴄᴛᴀ ᴀ ᴇsᴛᴇ ɴᴜᴍ ᴘᴀʀᴀ ᴄᴏsᴀs ɪᴍᴘᴏʀᴛᴀɴᴛᴇs.\nX-WA-BIZ-NAME:𝐇𝐚𝐜𝐡𝐞 𝐉𝐨𝐭𝐬 👑\nEND:VCARD`;
+        await this.sendMessage(nk.from, {contacts: {displayName: '𝗔𝗻𝗻𝗶𝗲𝗕𝗼𝘁 ', contacts: [{vcard}]}}, {quoted: callmsg});
         await this.updateBlockStatus(nk.from, 'block');
       }
     }
@@ -1509,15 +1510,15 @@ let date = d.toLocaleDateString('es', { day: 'numeric', month: 'long', year: 'nu
         if (!msg) return 
 	//if (!msg.isGroup) return console.log('sexoooo3')    
 	const antideleteMessage = `
-┏━━━━━━━━━⬣  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀  ⬣━━━━━━━━━
-*■👤 Usuario:* @${participant.split`@`[0]}
-*■⏱️ Hora:* ${time}
-*■📆 Fecha:* ${date}
-*■🚀 Enviando el mensaje eliminado...*
+╭┈┈  ৎ 🩵 ⬫ *  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀  *  ָ࣪  ۰ . ¡! 
+│▹ *👤 Usuario:* @${participant.split`@`[0]}
+│▹ *⏱️ Hora:* ${time}
+│▹ *📆 Fecha:* ${date}
+│▹ *🚀 Enviando el mensaje eliminado...*
     
-*■ Para desactivar esta función, escribe el comando:*
-*—◉ #disable antidelete*
-┗━━━━━━━━━⬣  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀  ⬣━━━━━━━━━`.trim();
+│▹ * Para desactivar esta función, escribe el comando:*
+│▹ *➥ 𓏲 ๋࣭  #disable antidelete*
+╰┈─┈─┈─┈─┈─┈─┈─┈─┈─┈╯`.trim();
         await this.sendMessage(msg.chat, {text: antideleteMessage, mentions: [participant]}, {quoted: msg})
         this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
     } catch (e) {
